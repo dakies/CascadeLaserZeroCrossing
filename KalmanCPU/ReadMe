@@ -1,0 +1,3 @@
+Jetson Linux Driver Package (L4T) provides a Python library, ,
+for controlling GPIOs. The library has the same API as .
+ See /opt/nvidia/jetson-gpio/doc/README.txt on your Jetson system for details.
