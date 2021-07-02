@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b08476a-0c32-4ef7-b240-712dd35938a3" name="Default Changelist" comment="" />
+    <list default="true" id="6b08476a-0c32-4ef7-b240-712dd35938a3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redPitaya_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +35,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1uLcgLlYmwhN2mJVWJQNDkLljf1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -37,6 +47,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -44,10 +55,16 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/rp" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.analog_inputs">
+    <configuration name="analog_inputs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="KalmanCPU" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -60,7 +77,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rp/analog_inputs.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -69,7 +86,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="redPitaya_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="KalmanCPU" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -82,7 +99,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/redPitaya_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -91,10 +108,86 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="redpitaya_scpi" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="KalmanCPU" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rp/redpitaya_scpi.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="rp_stream_threaded" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="KalmanCPU" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rp_stream_threaded.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_stream" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="KalmanCPU" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_stream.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.analog_inputs" />
+      <item itemvalue="Python.redPitaya_test" />
+      <item itemvalue="Python.test_stream" />
+      <item itemvalue="Python.rp_stream_threaded" />
+      <item itemvalue="Python.redpitaya_scpi" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.main2" />
+        <item itemvalue="Python.analog_inputs" />
+        <item itemvalue="Python.redpitaya_scpi" />
+        <item itemvalue="Python.redPitaya_test" />
+        <item itemvalue="Python.rp_stream_threaded" />
+        <item itemvalue="Python.test_stream" />
       </list>
     </recent_temporary>
   </component>
@@ -111,6 +204,8 @@
       <workItem from="1624448447633" duration="8213000" />
       <workItem from="1624460903886" duration="2477000" />
       <workItem from="1624570807458" duration="902000" />
+      <workItem from="1624616645772" duration="21375000" />
+      <workItem from="1624952978006" duration="6388000" />
     </task>
     <servers />
   </component>
@@ -118,43 +213,103 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="209" y="64" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1624870917859">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="209" y="64" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1624870917859" />
+    <state x="744" y="379" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1624806777557" />
     <state x="364" y="207" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1624572248213">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="364" y="207" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800@0.0.1280.800" timestamp="1624572248213" />
-    <state width="1238" height="227" key="GridCell.Tab.0.bottom" timestamp="1624572413915">
-      <screen x="0" y="25" width="1280" height="721" />
-    </state>
-    <state width="1238" height="227" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1624571888524" />
-    <state width="1238" height="227" key="GridCell.Tab.0.bottom/0.25.1280.721@0.25.1280.721" timestamp="1624572413915" />
-    <state width="1238" height="227" key="GridCell.Tab.0.center" timestamp="1624572413907">
-      <screen x="0" y="25" width="1280" height="721" />
-    </state>
-    <state width="1238" height="227" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1624571888523" />
-    <state width="1238" height="227" key="GridCell.Tab.0.center/0.25.1280.721@0.25.1280.721" timestamp="1624572413907" />
-    <state width="1238" height="227" key="GridCell.Tab.0.left" timestamp="1624572413907">
-      <screen x="0" y="25" width="1280" height="721" />
-    </state>
-    <state width="1238" height="227" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1624571888522" />
-    <state width="1238" height="227" key="GridCell.Tab.0.left/0.25.1280.721@0.25.1280.721" timestamp="1624572413907" />
-    <state width="1238" height="227" key="GridCell.Tab.0.right" timestamp="1624572413908">
-      <screen x="0" y="25" width="1280" height="721" />
-    </state>
-    <state width="1238" height="227" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1624571888524" />
-    <state width="1238" height="227" key="GridCell.Tab.0.right/0.25.1280.721@0.25.1280.721" timestamp="1624572413908" />
-    <state x="149" y="25" key="SettingsEditor" timestamp="1624449159380">
+    <state x="532" y="114" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1624870130592">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="149" y="25" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1624449159380" />
-    <state x="634" y="411" key="com.intellij.ide.util.TipDialog" timestamp="1624604141628">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="532" y="114" key="#com.intellij.ide.macro.MacrosDialog/0.0.1280.800@0.0.1280.800" timestamp="1624870130592" />
+    <state width="1238" height="198" key="GridCell.Tab.0.bottom" timestamp="1624912002653">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="317" y="229" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1624460984261" />
+    <state width="1238" height="198" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1624912002653" />
+    <state width="2518" height="519" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1624806730826" />
+    <state width="1238" height="227" key="GridCell.Tab.0.bottom/0.25.1280.721@0.25.1280.721" timestamp="1624572413915" />
+    <state width="1238" height="232" key="GridCell.Tab.0.bottom/0.25.1280.724@0.25.1280.724" timestamp="1624877447314" />
+    <state width="1238" height="198" key="GridCell.Tab.0.center" timestamp="1624912002652">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="198" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1624912002652" />
+    <state width="2518" height="519" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1624806730825" />
+    <state width="1238" height="227" key="GridCell.Tab.0.center/0.25.1280.721@0.25.1280.721" timestamp="1624572413907" />
+    <state width="1238" height="232" key="GridCell.Tab.0.center/0.25.1280.724@0.25.1280.724" timestamp="1624877447314" />
+    <state width="1238" height="198" key="GridCell.Tab.0.left" timestamp="1624912002651">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="198" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1624912002651" />
+    <state width="2518" height="519" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1624806730824" />
+    <state width="1238" height="227" key="GridCell.Tab.0.left/0.25.1280.721@0.25.1280.721" timestamp="1624572413907" />
+    <state width="1238" height="232" key="GridCell.Tab.0.left/0.25.1280.724@0.25.1280.724" timestamp="1624877447313" />
+    <state width="1238" height="198" key="GridCell.Tab.0.right" timestamp="1624912002653">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="198" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1624912002653" />
+    <state width="2518" height="519" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1624806730826" />
+    <state width="1238" height="227" key="GridCell.Tab.0.right/0.25.1280.721@0.25.1280.721" timestamp="1624572413908" />
+    <state width="1238" height="232" key="GridCell.Tab.0.right/0.25.1280.724@0.25.1280.724" timestamp="1624877447314" />
+    <state width="1238" height="198" key="GridCell.Tab.1.bottom" timestamp="1624912002656">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="198" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1624912002656" />
+    <state width="2518" height="519" key="GridCell.Tab.1.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1624806730828" />
+    <state width="1238" height="213" key="GridCell.Tab.1.bottom/0.25.1280.724@0.25.1280.724" timestamp="1624877009913" />
+    <state width="1238" height="198" key="GridCell.Tab.1.center" timestamp="1624912002655">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="198" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1624912002655" />
+    <state width="2518" height="519" key="GridCell.Tab.1.center/0.0.2560.1440@0.0.2560.1440" timestamp="1624806730827" />
+    <state width="1238" height="213" key="GridCell.Tab.1.center/0.25.1280.724@0.25.1280.724" timestamp="1624877009913" />
+    <state width="1238" height="198" key="GridCell.Tab.1.left" timestamp="1624912002654">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="198" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1624912002654" />
+    <state width="2518" height="519" key="GridCell.Tab.1.left/0.0.2560.1440@0.0.2560.1440" timestamp="1624806730827" />
+    <state width="1238" height="213" key="GridCell.Tab.1.left/0.25.1280.724@0.25.1280.724" timestamp="1624877009912" />
+    <state width="1238" height="198" key="GridCell.Tab.1.right" timestamp="1624912002656">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="198" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1624912002656" />
+    <state width="2518" height="519" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1624806730828" />
+    <state width="1238" height="213" key="GridCell.Tab.1.right/0.25.1280.724@0.25.1280.724" timestamp="1624877009913" />
+    <state x="0" y="25" width="982" height="724" key="SettingsEditor" timestamp="1624883270443">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="0" y="25" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1624883270443" />
+    <state x="669" y="147" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1624807035896" />
+    <state x="0" y="25" width="982" height="724" key="SettingsEditor/0.25.1280.724@0.25.1280.724" timestamp="1624875987124" />
+    <state width="640" height="400" key="XDebugger.FullValuePopup" timestamp="1624878257245">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="640" height="400" key="XDebugger.FullValuePopup/0.0.1280.800@0.0.1280.800" timestamp="1624878257245" />
+    <state x="317" y="231" key="com.intellij.ide.util.TipDialog" timestamp="1624616649992">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="317" y="231" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1624616649992" />
     <state x="634" y="411" key="com.intellij.ide.util.TipDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1624604141628" />
     <state x="317" y="231" key="com.intellij.ide.util.TipDialog/0.25.1280.721@0.25.1280.721" timestamp="1624570810820" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1624869617701">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1624869617701" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/KalmanCPU$main2.coverage" NAME="main2 Coverage Results" MODIFIED="1624461340868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/KalmanCPU$main.coverage" NAME="main Coverage Results" MODIFIED="1624571888510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/KalmanCPU$redPitaya_test.coverage" NAME="redPitaya_test Coverage Results" MODIFIED="1624878907433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/KalmanCPU$analog_inputs.coverage" NAME="analog_inputs Coverage Results" MODIFIED="1624883671259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/KalmanCPU$digital_led_blink.coverage" NAME="digital_led_blink Coverage Results" MODIFIED="1624870758563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/KalmanCPU$rp_stream_threaded.coverage" NAME="rp_stream_threaded Coverage Results" MODIFIED="1624878231673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/KalmanCPU$identification.coverage" NAME="identification Coverage Results" MODIFIED="1624869919134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/KalmanCPU$lc_scan.coverage" NAME="lc_scan Coverage Results" MODIFIED="1624872669733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/KalmanCPU$main.coverage" NAME="main Coverage Results" MODIFIED="1624803742440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/KalmanCPU$start_streamserver_websocket.coverage" NAME="start_streamserver_websocket Coverage Results" MODIFIED="1624874377218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/red_pitaya_streaming_client_python-master" />
+    <SUITE FILE_PATH="coverage/KalmanCPU$redpitaya_scpi.coverage" NAME="redpitaya_scpi Coverage Results" MODIFIED="1624882593629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rp" />
+    <SUITE FILE_PATH="coverage/KalmanCPU$test_stream.coverage" NAME="test_stream Coverage Results" MODIFIED="1624877355273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
