@@ -1,7 +1,8 @@
 MODEL ?= Z10
 
-CFLAGS  = -g -std=gnu11 -Wall -Werror
+CFLAGS  = -g -std=gnu11 -Wall
 CFLAGS += -I/opt/redpitaya/include
+CFLAGS += -O3
 LDFLAGS = -L/opt/redpitaya/lib
 LDLIBS =  -lpthread -lrp -lm
 
