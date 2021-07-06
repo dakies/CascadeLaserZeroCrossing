@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b08476a-0c32-4ef7-b240-712dd35938a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redPitaya_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RedPitaya/Examples/C/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../RedPitaya/Examples/C/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,6 +203,7 @@
       <workItem from="1624570807458" duration="902000" />
       <workItem from="1624616645772" duration="21375000" />
       <workItem from="1624952978006" duration="6388000" />
+      <workItem from="1625474646443" duration="27000" />
     </task>
     <servers />
   </component>
@@ -288,12 +286,13 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="640" height="400" key="XDebugger.FullValuePopup/0.0.1280.800@0.0.1280.800" timestamp="1624878257245" />
-    <state x="317" y="231" key="com.intellij.ide.util.TipDialog" timestamp="1624616649992">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="317" y="233" key="com.intellij.ide.util.TipDialog" timestamp="1625474650653">
+      <screen x="0" y="25" width="1280" height="722" />
     </state>
     <state x="317" y="231" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1624616649992" />
     <state x="634" y="411" key="com.intellij.ide.util.TipDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1624604141628" />
     <state x="317" y="231" key="com.intellij.ide.util.TipDialog/0.25.1280.721@0.25.1280.721" timestamp="1624570810820" />
+    <state x="317" y="233" key="com.intellij.ide.util.TipDialog/0.25.1280.722@0.25.1280.722" timestamp="1625474650653" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1624869617701">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

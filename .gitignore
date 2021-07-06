@@ -1,6 +1,7 @@
 *.npy
 # Prerequisites
 *.d
+*.txt
 
 # Object files
 *.o
