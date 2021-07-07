@@ -13,6 +13,7 @@
 #define R 0.000001 //Variance of measurement
 #define TS 0.000004 // Sampling period
 
+
 //#define signal_freq (2*v_stage/lambda_hene) //Frequency of intensity signal
 #define OMEGA 99291.8//(2*M_PI*signal_freq) //Angular freq of intesity signal
 
@@ -78,25 +79,19 @@ void update_p(float *P, float *state) {
 }
 
 int main() {
-    _Bool half_phase;
-    _Bool half_phase_prev = 0;
-    float x[3] = {0, OMEGA, AMPLITUDE};
-    float q[4] = {0.01, 0.001, 0.001, 0};
-    float p[4] = {100, 100, 100, 100};
-    float z;
-
     /* Print error, if rp_Init() function failed */
     if (rp_Init() != RP_OK) {
         fprintf(stderr, "Rp api init failed!\n");
     }
-
+    #ifdef DEBUG
     // Print current working directory
-    /*char cwd[PATH_MAX];
+    char cwd[PATH_MAX];
     if (getcwd(cwd, sizeof(cwd)) != NULL) {
         printf("Current working dir: %s\n", cwd);
     } else {
         perror("getcwd() error");
-    }*/
+    }
+    #endif
 
     // Open file to save CPU times
     FILE *fp;
@@ -116,7 +111,7 @@ int main() {
         return 0;
     }
 
-    uint32_t buff_size = 1;
+    uint32_t buff_size = 128;
     float *buff1 = (float *) malloc(buff_size * sizeof(float));
     float *buff2 = (float *) malloc(buff_size * sizeof(float));
 
@@ -125,6 +120,7 @@ int main() {
     rp_AcqSetSamplingRate(RP_SMP_244_140K);*/
 
     rp_AcqReset();
+    //rp_AcqSetSamplingRate(RP_SMP_244_140K);
     rp_AcqSetDecimation(RP_DEC_8);
     rp_AcqSetTriggerDelay(0);
     rp_AcqStart();
@@ -132,15 +128,35 @@ int main() {
     //Set digital pin direction
     rp_DpinSetDirection(RP_DIO0_P, RP_OUT);
 
+    // Print sampling rate (Doesn't work for some reason. Segmentation fault)
+    /*
+    float *sr = NULL;
+    rp_AcqGetSamplingRateHz(sr);
+    printf("%f",*sr);
+    */
+
+    _Bool half_phase;
+    _Bool half_phase_prev = 0;
+    float x[3] = {0, OMEGA, AMPLITUDE};
+    float q[4] = {0.01, 0.001, 0.001, 0};
+    float p[4] = {100, 100, 100, 100};
+    float z;
+
     while(1){
+        #ifdef DEBUG
         // Time for iteration of filter
         clock_t begin = clock();
+        #endif
 
         // Get data from buffer
         //rp_AcqGetDataV2
         rp_AcqGetOldestDataV(RP_CH_1, &buff_size, buff1);
         //rp_AcqGetOldestDataV(RP_CH_2, &buff_size, buff2);
+
+        #ifdef DEBUG
+        // End timing
         clock_t end = clock();
+        #endif
 
         // Todo: If buffer empty, skip...
         z=buff1[0];
@@ -174,12 +190,12 @@ int main() {
 	    //rp_GenTrigger(0);
         }
 
-        // End timing
 
-        float time_spent = (float) (end - begin); // / CLOCKS_PER_SEC;
-
+        #ifdef DEBUG
         //Save time
+        float time_spent = (float) (end - begin); // / CLOCKS_PER_SEC;
         fprintf(fp, "%lf\n", time_spent);
+        #endif
         //fprintf(stderr, "%lf\n", time_spent);
     }
     /* Releasing resources */
