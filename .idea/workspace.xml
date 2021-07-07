@@ -1,38 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="Project" targetName="sim_main" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
+    </configurations>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="37cd095b-536a-42d5-9cd8-ea1e3657f901" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/plot_time_log.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sim_main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KalmanCPU/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/KalmanCPU/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/CascadeLaserZeroCrossing2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plot_c.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RedPitaya/Examples/C/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/RedPitaya/Examples/C/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RedPitaya/Examples/C/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/RedPitaya/Examples/C/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/convert_numpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/convert_numpy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/sim_main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="CMakeLists.txt" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="d7c568b4-4172-4d8c-ba8d-6ac2cf04357e" />
   <component name="ProjectId" id="1utAr4l0S9GI7QGYIfaBa2rsi6P" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="cmake.loaded.for.project" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -48,6 +73,21 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.convert_numpy">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sim_main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="sim_main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sim_main">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="convert_numpy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CascadeLaserZeroCrossing" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -62,6 +102,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/convert_numpy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="plot_c" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CascadeLaserZeroCrossing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plot_c.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -114,14 +176,23 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="CMake Application.sim_main" />
+      <item itemvalue="Python.convert_numpy" />
+      <item itemvalue="Python.plot_c" />
+      <item itemvalue="Python.plot_time_log" />
+      <item itemvalue="Python.simu_c" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.convert_numpy" />
+        <item itemvalue="Python.plot_c" />
         <item itemvalue="Python.simu_c" />
         <item itemvalue="Python.plot_time_log" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -132,78 +203,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1625474706696</updated>
-      <workItem from="1625474712132" duration="10423000" />
+      <workItem from="1625474712132" duration="11545000" />
+      <workItem from="1625643195959" duration="1215000" />
+      <workItem from="1625649111927" duration="936000" />
+      <workItem from="1625650962541" duration="17000" />
+      <workItem from="1625651664700" duration="2134000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="366" y="196" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1625573761362">
-      <screen x="0" y="25" width="1280" height="725" />
-    </state>
-    <state x="366" y="196" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1280.725@0.25.1280.725" timestamp="1625573761362" />
-    <state x="347" y="25" key="#plot_time_log" timestamp="1625475137459">
-      <screen x="0" y="25" width="1280" height="722" />
-    </state>
-    <state x="347" y="25" key="#plot_time_log/0.25.1280.722@0.25.1280.722" timestamp="1625475137459" />
-    <state x="428" y="145" key="FileChooserDialogImpl" timestamp="1625562678271">
-      <screen x="0" y="25" width="1280" height="724" />
-    </state>
-    <state x="428" y="145" key="FileChooserDialogImpl/0.25.1280.724@0.25.1280.724" timestamp="1625562678271" />
-    <state width="1238" height="97" key="GridCell.Tab.0.bottom" timestamp="1625575704370">
-      <screen x="0" y="25" width="1280" height="724" />
-    </state>
-    <state width="1238" height="176" key="GridCell.Tab.0.bottom/0.25.1280.722@0.25.1280.722" timestamp="1625475764743" />
-    <state width="1238" height="97" key="GridCell.Tab.0.bottom/0.25.1280.724@0.25.1280.724" timestamp="1625575704370" />
-    <state width="1238" height="97" key="GridCell.Tab.0.center" timestamp="1625575704369">
-      <screen x="0" y="25" width="1280" height="724" />
-    </state>
-    <state width="1238" height="176" key="GridCell.Tab.0.center/0.25.1280.722@0.25.1280.722" timestamp="1625475764742" />
-    <state width="1238" height="97" key="GridCell.Tab.0.center/0.25.1280.724@0.25.1280.724" timestamp="1625575704369" />
-    <state width="1238" height="97" key="GridCell.Tab.0.left" timestamp="1625575704368">
-      <screen x="0" y="25" width="1280" height="724" />
-    </state>
-    <state width="1238" height="176" key="GridCell.Tab.0.left/0.25.1280.722@0.25.1280.722" timestamp="1625475764741" />
-    <state width="1238" height="97" key="GridCell.Tab.0.left/0.25.1280.724@0.25.1280.724" timestamp="1625575704368" />
-    <state width="1238" height="97" key="GridCell.Tab.0.right" timestamp="1625575704369">
-      <screen x="0" y="25" width="1280" height="724" />
-    </state>
-    <state width="1238" height="176" key="GridCell.Tab.0.right/0.25.1280.722@0.25.1280.722" timestamp="1625475764742" />
-    <state width="1238" height="97" key="GridCell.Tab.0.right/0.25.1280.724@0.25.1280.724" timestamp="1625575704369" />
-    <state width="1238" height="221" key="GridCell.Tab.1.bottom" timestamp="1625475432447">
-      <screen x="0" y="25" width="1280" height="722" />
-    </state>
-    <state width="1238" height="221" key="GridCell.Tab.1.bottom/0.25.1280.722@0.25.1280.722" timestamp="1625475432447" />
-    <state width="1238" height="221" key="GridCell.Tab.1.center" timestamp="1625475432447">
-      <screen x="0" y="25" width="1280" height="722" />
-    </state>
-    <state width="1238" height="221" key="GridCell.Tab.1.center/0.25.1280.722@0.25.1280.722" timestamp="1625475432447" />
-    <state width="1238" height="221" key="GridCell.Tab.1.left" timestamp="1625475432446">
-      <screen x="0" y="25" width="1280" height="722" />
-    </state>
-    <state width="1238" height="221" key="GridCell.Tab.1.left/0.25.1280.722@0.25.1280.722" timestamp="1625475432446" />
-    <state width="1238" height="221" key="GridCell.Tab.1.right" timestamp="1625475432447">
-      <screen x="0" y="25" width="1280" height="722" />
-    </state>
-    <state width="1238" height="221" key="GridCell.Tab.1.right/0.25.1280.722@0.25.1280.722" timestamp="1625475432447" />
-    <state x="149" y="25" width="982" height="724" key="SettingsEditor" timestamp="1625562771104">
-      <screen x="0" y="25" width="1280" height="724" />
-    </state>
-    <state x="149" y="25" width="982" height="724" key="SettingsEditor/0.25.1280.724@0.25.1280.724" timestamp="1625562771104" />
-    <state x="0" y="0" width="1280" height="800" key="dock-window-1" timestamp="1625494755038">
-      <screen x="0" y="25" width="1280" height="724" />
-    </state>
-    <state x="0" y="0" width="1280" height="800" key="dock-window-1/0.25.1280.724@0.25.1280.724" timestamp="1625494755038" />
-    <state x="394" y="264" width="666" height="285" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1625562759350">
-      <screen x="0" y="25" width="1280" height="724" />
-    </state>
-    <state x="394" y="264" width="666" height="285" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.25.1280.724@0.25.1280.724" timestamp="1625562759350" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CascadeLaserZeroCrossing$simu_c.coverage" NAME="simu_c Coverage Results" MODIFIED="1625573799330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CascadeLaserZeroCrossing$plot_time_log.coverage" NAME="plot_time_log Coverage Results" MODIFIED="1625496858052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CascadeLaserZeroCrossing$convert_numpy.coverage" NAME="convert_numpy Coverage Results" MODIFIED="1625575704354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

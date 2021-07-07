@@ -6,7 +6,16 @@
 #include <limits.h>
 
 
-#define TS 0.0000041
+
+#define lambda_hene 0.0000006328 //Wavelength of HeNe laser (m)
+#define v_stage 0.005 //velocity stage (ms^-1)
+#define amplitude 0.012 // Amplitude of HeNe laser signal(V)
+#define R 0.000001 //Variance of measurement
+#define fs 250000 //Sampling frequency (cross check with rp_AcqSetSamplingRate(***))
+
+#define signal_freq (2*v_stage/lambda_hene) //Frequency of intensity signal
+#define omega (2*M_PI*signal_freq) //Angular freq of intesity signal
+#define TS (1/fs) // Sampling period
 
 // delete fprint
 // block vs sample by sample
@@ -35,13 +44,13 @@ float alpha(float const *state, float const *P) {
     return P[0] * state[0] * state[0] * cos_thet*cos_thet + P[2] * sin_thet*sin_thet;
 }
 
-float calc_S(const float *state, const float *P, const float R) {
+float calc_S(const float *state, const float *P) {
 
     return alpha(state, P) + R;
 }
 
-void gain(float *K, const float *state, const float *P, float r) {
-    float s = calc_S(state, P, r);
+void gain(float *K, const float *state, const float *P) {
+    float s = calc_S(state, P);
     float cos_thet = cosf(state[0]);
     K[0] = P[0] * state[2] * cos_thet;
     K[0] = s;
@@ -51,18 +60,18 @@ void gain(float *K, const float *state, const float *P, float r) {
     K[2] /= s;
 }
 
-void update_state(float *state, float *P, float measurement,  float r) {
+void update_state(float *state, float *P, float measurement) {
     float y = measurement - state[2] * sinf(state[0]);
     float k[3];
-    gain(k, state, P, r);
+    gain(k, state, P);
     state[0] = state[0] + y * k[0];
     state[1] = state[1] + y * k[1];
     state[2] = state[2] + y * k[2];
 }
 
-void update_p(float *P, float *state, float r) {
+void update_p(float *P, float *state) {
     float a = alpha(state, P);
-    a = (1 - a / (a + r));
+    a = (1 - a / (a + R));
     P[0] *= a;
     P[1] *= a;
     P[2] *= a;
@@ -73,11 +82,10 @@ int main() {
     _Bool half_phase;
     _Bool half_phase_prev;
     //float phase_prev;
-    float x[3]={0, 15800*2*M_PI, 0.1};
-    float q[4] = {0.1,0.1,0.1,0.1};
+    float x[3]={0, omega, amplitude};
+    float const q[4] = {0.01,0.001,0.001,0};
     float p[4] = {100,100,100, 100};
     float z;
-    float r = 0.000001;
 
 
     // Open file to save CPU times
@@ -111,7 +119,7 @@ int main() {
 
     // Open file to save CPU times
     FILE *hene;
-    hene = fopen("./hene.txt", "r");
+    hene = fopen("hene.txt", "r");
 
     // Check if it managed to open the file
     if (!hene){
@@ -119,17 +127,11 @@ int main() {
         return 0;
     }
 
-    while(fgets(z, 1, hene) != NULL){
-        // Time for iteration of filter
-        clock_t begin = clock();
-
-        // Todo: If buffer empty, skip...
-        z=buff1[0];
-
+    while(fscanf(hene, "%f", &z)== 1){
         predict_state(x, TS);
         predict_P(p, q, TS);
-        update_state(x, p, z, r);
-        update_p(p, x, r);
+        update_state(x, p, z);
+        update_p(p, x);
 
         if(x[0]>2*M_PI){
             x[0] = x[0] - 2*M_PI;
@@ -137,28 +139,22 @@ int main() {
         // Check if phase is greater or smaller than Pi
         if(x[0]>M_PI){
             half_phase = 1;
-            rp_DpinSetState(RP_DIO0_P, RP_LOW);
             //printf("Up \n");
         } else{
             half_phase = 0;
-            rp_DpinSetState(RP_DIO0_P, RP_HIGH);
             //printf("Down \n");
         }
 
         // Save channel 2 on change of phase
         if(half_phase^half_phase_prev){
-            printf("***ZERO***\n");
+            //printf("***ZERO***\n");
         }
 
-        // End timing
-        clock_t end = clock();
-        float time_spent = (float) (end - begin); // / CLOCKS_PER_SEC;
-
         //Save time
-        fprintf(hp, "%lf\n", half_phase);
-        fprintf(orig, "%lf\n", z);
-        fprintf(orig, "%lf\n", filt);
+        fprintf(hp, "%d\n", half_phase);
+        fprintf(orig, "%f\n", z);
+        fprintf(filt, "%f\n", x[2]*sinf(x[0]));
     }
-    fclose(fp);
-    fclose(dat);
+    //fclose(fp);
+    //fclose(dat);
 }

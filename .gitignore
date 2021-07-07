@@ -1,8 +1,7 @@
 *.npy
+hene.txt
 # Prerequisites
 *.d
-*.txt
-
 # Object files
 *.o
 *.ko

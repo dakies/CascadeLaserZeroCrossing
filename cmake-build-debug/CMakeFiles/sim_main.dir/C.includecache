@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/danielkiesewalter/Documents/Uni/Master/System on Chip/CascadeLaserZeroCrossing/sim_main.c
+stdio.h
+-
+math.h
+-
+time.h
+-
+stdlib.h
+-
+unistd.h
+-
+limits.h
+-
+
