@@ -5,17 +5,17 @@
 #include <unistd.h>
 #include <limits.h>
 
+//#define TS 0.0000041
 
-
-#define lambda_hene 0.0000006328 //Wavelength of HeNe laser (m)
-#define v_stage 0.005 //velocity stage (ms^-1)
-#define amplitude 0.012 // Amplitude of HeNe laser signal(V)
+//#define lambda_hene 0.0000006328 //Wavelength of HeNe laser (m)
+//#define v_stage 0.005 //velocity stage (ms^-1)
+#define AMPLITUDE 0.012 // Amplitude of HeNe laser signal(V)
 #define R 0.000001 //Variance of measurement
-#define fs 250000 //Sampling frequency (cross check with rp_AcqSetSamplingRate(***))
+#define TS 0.000004 // Sampling period
 
-#define signal_freq (2*v_stage/lambda_hene) //Frequency of intensity signal
-#define omega (2*M_PI*signal_freq) //Angular freq of intesity signal
-#define TS (1/fs) // Sampling period
+//#define signal_freq (2*v_stage/lambda_hene) //Frequency of intensity signal
+#define OMEGA 99291.8//(2*M_PI*signal_freq) //Angular freq of intesity signal
+
 
 // delete fprint
 // block vs sample by sample
@@ -82,10 +82,11 @@ int main() {
     _Bool half_phase;
     _Bool half_phase_prev;
     //float phase_prev;
-    float x[3]={0, omega, amplitude};
-    float const q[4] = {0.01,0.001,0.001,0};
-    float p[4] = {100,100,100, 100};
+    float x[3] = {0, OMEGA, AMPLITUDE};
+    float q[4] = {0.01, 0.001, 0.001, 0};
+    float p[4] = {100, 100, 100, 100};
     float z;
+
 
 
     // Open file to save CPU times

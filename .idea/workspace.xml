@@ -12,15 +12,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37cd095b-536a-42d5-9cd8-ea1e3657f901" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/CascadeLaserZeroCrossing2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plot_c.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RedPitaya/Examples/C/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/RedPitaya/Examples/C/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RedPitaya/Examples/C/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/RedPitaya/Examples/C/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/convert_numpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/convert_numpy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/KalmanFilter_Sim_normalSin.py.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/KalmanFilter_Sim_normalSin.py.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sim_main" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sim_main" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kalman_c_hp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/kalman_c_hp.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kalman_filt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/kalman_filt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_c.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/plot_c.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sim_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/sim_main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +31,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -72,7 +73,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.convert_numpy">
+  <component name="RunManager" selected="CMake Application.sim_main">
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -207,7 +208,7 @@
       <workItem from="1625643195959" duration="1215000" />
       <workItem from="1625649111927" duration="936000" />
       <workItem from="1625650962541" duration="17000" />
-      <workItem from="1625651664700" duration="2134000" />
+      <workItem from="1625651664700" duration="5013000" />
     </task>
     <servers />
   </component>
