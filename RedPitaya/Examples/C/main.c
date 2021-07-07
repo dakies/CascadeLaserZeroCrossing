@@ -91,12 +91,12 @@ int main() {
     }
 
     // Print current working directory
-    char cwd[PATH_MAX];
+    /*char cwd[PATH_MAX];
     if (getcwd(cwd, sizeof(cwd)) != NULL) {
         printf("Current working dir: %s\n", cwd);
     } else {
         perror("getcwd() error");
-    }
+    }*/
 
     // Open file to save CPU times
     FILE *fp;
@@ -155,12 +155,12 @@ int main() {
         // Check if phase is greater or smaller than Pi
         if(x[0]>M_PI){
             half_phase = 1;
-            rp_DpinSetState(RP_DIO0_P, RP_LOW);
-            printf("Up \n");
+            //rp_DpinSetState(RP_DIO0_P, RP_LOW);
+            //printf("Up \n");
         } else{
             half_phase = 0;
-            rp_DpinSetState(RP_DIO0_P, RP_HIGH);
-            printf("Down \n");
+            //rp_DpinSetState(RP_DIO0_P, RP_HIGH);
+            //printf("Down \n");
         }
 
         // Save channel 2 on change of phase
@@ -178,7 +178,7 @@ int main() {
         float time_spent = (float) (end - begin); // / CLOCKS_PER_SEC;
 
         //Save time
-        //fprintf(fp, "%lf\n", time_spent);
+        fprintf(fp, "%lf\n", time_spent);
         //fprintf(stderr, "%lf\n", time_spent);
     }
     /* Releasing resources */

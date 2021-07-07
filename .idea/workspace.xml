@@ -15,15 +15,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RedPitaya/Examples/C/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/RedPitaya/Examples/C/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RedPitaya/Examples/C/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/RedPitaya/Examples/C/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/KalmanFilter_Sim_normalSin.py.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/KalmanFilter_Sim_normalSin.py.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/sim_main" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sim_main" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/convert_numpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/convert_numpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kalman_c_hp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/kalman_c_hp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kalman_c_orig.txt" beforeDir="false" afterPath="$PROJECT_DIR$/kalman_c_orig.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kalman_filt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/kalman_filt.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plot_c.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/plot_c.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sim_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/sim_main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +27,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -42,7 +37,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/RedPitaya" />
   </component>
   <component name="JupyterTrust" id="d7c568b4-4172-4d8c-ba8d-6ac2cf04357e" />
   <component name="ProjectId" id="1utAr4l0S9GI7QGYIfaBa2rsi6P" />
@@ -74,8 +69,13 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.convert_numpy">
+  <component name="RunManager" selected="CMake Application.sim_main">
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sim_main" type="CMakeRunConfiguration" factoryName="Application" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="sim_main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sim_main">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -83,11 +83,6 @@
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sim_main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="sim_main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sim_main">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="convert_numpy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -179,6 +174,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="CMake Application.sim_main" />
       <item itemvalue="Python.convert_numpy" />
       <item itemvalue="Python.plot_c" />
       <item itemvalue="Python.plot_time_log" />
@@ -186,6 +182,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="CMake Application.sim_main" />
         <item itemvalue="Python.convert_numpy" />
         <item itemvalue="Python.plot_c" />
         <item itemvalue="Python.simu_c" />
@@ -221,12 +218,11 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
