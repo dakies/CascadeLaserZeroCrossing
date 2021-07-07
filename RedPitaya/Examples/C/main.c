@@ -140,6 +140,7 @@ int main() {
         //rp_AcqGetDataV2
         rp_AcqGetOldestDataV(RP_CH_1, &buff_size, buff1);
         //rp_AcqGetOldestDataV(RP_CH_2, &buff_size, buff2);
+        clock_t end = clock();
 
         // Todo: If buffer empty, skip...
         z=buff1[0];
@@ -155,11 +156,11 @@ int main() {
         // Check if phase is greater or smaller than Pi
         if(x[0]>M_PI){
             half_phase = 1;
-            //rp_DpinSetState(RP_DIO0_P, RP_LOW);
+            rp_DpinSetState(RP_DIO0_P, RP_LOW);
             //printf("Up \n");
         } else{
             half_phase = 0;
-            //rp_DpinSetState(RP_DIO0_P, RP_HIGH);
+            rp_DpinSetState(RP_DIO0_P, RP_HIGH);
             //printf("Down \n");
         }
 
@@ -174,7 +175,7 @@ int main() {
         }
 
         // End timing
-        clock_t end = clock();
+
         float time_spent = (float) (end - begin); // / CLOCKS_PER_SEC;
 
         //Save time
