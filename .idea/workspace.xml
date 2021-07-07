@@ -18,7 +18,9 @@
       <change beforePath="$PROJECT_DIR$/Simulation/KalmanFilter_Sim_normalSin.py.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/KalmanFilter_Sim_normalSin.py.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/sim_main" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sim_main" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/convert_numpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/convert_numpy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kalman_c_hp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/kalman_c_hp.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kalman_c_orig.txt" beforeDir="false" afterPath="$PROJECT_DIR$/kalman_c_orig.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kalman_filt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/kalman_filt.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plot_c.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/plot_c.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sim_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/sim_main.c" afterDir="false" />
@@ -31,7 +33,6 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -73,13 +74,8 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.sim_main">
+  <component name="RunManager" selected="Python.convert_numpy">
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sim_main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="sim_main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sim_main">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -87,6 +83,11 @@
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sim_main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="sim_main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sim_main">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="convert_numpy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -178,7 +179,6 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="CMake Application.sim_main" />
       <item itemvalue="Python.convert_numpy" />
       <item itemvalue="Python.plot_c" />
       <item itemvalue="Python.plot_time_log" />
@@ -208,23 +208,25 @@
       <workItem from="1625643195959" duration="1215000" />
       <workItem from="1625649111927" duration="936000" />
       <workItem from="1625650962541" duration="17000" />
-      <workItem from="1625651664700" duration="5013000" />
+      <workItem from="1625651664700" duration="7106000" />
+      <workItem from="1625665064460" duration="1000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

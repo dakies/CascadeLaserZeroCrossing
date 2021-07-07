@@ -7,7 +7,14 @@
 
 #include "rp.h"
 
-#define TS 0.0000041
+//#define lambda_hene 0.0000006328 //Wavelength of HeNe laser (m)
+//#define v_stage 0.005 //velocity stage (ms^-1)
+#define AMPLITUDE 0.012 // Amplitude of HeNe laser signal(V)
+#define R 0.000001 //Variance of measurement
+#define TS 0.000004 // Sampling period
+
+//#define signal_freq (2*v_stage/lambda_hene) //Frequency of intensity signal
+#define OMEGA 99291.8//(2*M_PI*signal_freq) //Angular freq of intesity signal
 
 // delete fprint
 // block vs sample by sample
@@ -19,51 +26,51 @@
 // Thermal throttilng
 // DVFS
 
-void predict_state(float *state, const float ts) {
-    state[0] = state[0] + state[1] * ts;
+void predict_state(float *state) {
+    state[0] = state[0] + state[1] * TS;
 }
 
-void predict_P(float *P, const float *Q, const float ts) {
-    P[0] = P[0] + 2 * ts * P[3] + ts * ts * P[1] + Q[0];
+void predict_P(float *P, const float *Q) {
+    P[0] = P[0] + 2 * TS * P[3] + TS * TS * P[1] + Q[0];
     P[1] = P[1] + Q[1];
     P[2] = P[2] + Q[2];
-    P[3] = P[3] + ts * P[1] + Q[3];
+    P[3] = P[3] + TS * P[1] + Q[3];
 }
 
 float alpha(float const *state, float const *P) {
     float cos_thet = cosf(state[0]);
     float sin_thet = sinf(state[0]);
-    return P[0] * state[0] * state[0] * cos_thet*cos_thet + P[2] * sin_thet*sin_thet;
+    return P[0] * state[2] * state[2] * cos_thet*cos_thet + P[2] * sin_thet*sin_thet;
 }
 
-float calc_S(const float *state, const float *P, const float R) {
+float calc_S(const float *state, const float *P) {
 
     return alpha(state, P) + R;
 }
 
-void gain(float *K, const float *state, const float *P, float r) {
-    float s = calc_S(state, P, r);
+void gain(float *K, const float *state, const float *P) {
+    float s = calc_S(state, P);
     float cos_thet = cosf(state[0]);
     K[0] = P[0] * state[2] * cos_thet;
-    K[0] = s;
+    K[0] /= s;
     K[1] = P[3] * state[2] * cos_thet;
     K[1] /= s;
     K[2] = P[2] * sinf(state[0]);
     K[2] /= s;
 }
 
-void update_state(float *state, float *P, float measurement,  float r) {
+void update_state(float *state, float *P, float measurement) {
     float y = measurement - state[2] * sinf(state[0]);
     float k[3];
-    gain(k, state, P, r);
+    gain(k, state, P);
     state[0] = state[0] + y * k[0];
     state[1] = state[1] + y * k[1];
     state[2] = state[2] + y * k[2];
 }
 
-void update_p(float *P, float *state, float r) {
+void update_p(float *P, float *state) {
     float a = alpha(state, P);
-    a = (1 - a / (a + r));
+    a = (1 - a / (a + R));
     P[0] *= a;
     P[1] *= a;
     P[2] *= a;
@@ -72,16 +79,11 @@ void update_p(float *P, float *state, float r) {
 
 int main() {
     _Bool half_phase;
-    _Bool half_phase_prev;
-    //float phase_prev;
-    float x[3]={0, 15800*2*M_PI, 0.1};
-    float q[4] = {0.1,0.1,0.1,0.1};
-    float p[4] = {100,100,100, 100};
-    //float k[3];
+    _Bool half_phase_prev = 0;
+    float x[3] = {0, OMEGA, AMPLITUDE};
+    float q[4] = {0.01, 0.001, 0.001, 0};
+    float p[4] = {100, 100, 100, 100};
     float z;
-    float r = 0.000001;
-    //float s;
-    //float a;
 
     /* Print error, if rp_Init() function failed */
     if (rp_Init() != RP_OK) {
@@ -130,18 +132,6 @@ int main() {
     //Set digital pin direction
     rp_DpinSetDirection(RP_DIO0_P, RP_OUT);
 
-   /* rp_GenWaveform(RP_CH_1, RP_WAVEFORM_ARBITRARY);
-    float *signaaal = (float*) malloc(2 * sizeof(float));
-    *signaaal = 0; *(signaaal + 1) = 1; 
-    rp_GenArbWaveform(RP_CH_1, signaaal, 2);
-
-    rp_GenMode(RP_CH_1, RP_GEN_MODE_BURST);
-    rp_GenBurstCount(RP_CH_1, 1);
-    rp_GenBurstRepetitions(RP_CH_1, -1);
-    rp_GenBurstPeriod(RP_CH_1, 1);
-    rp_GenOutEnable(RP_CH_1);*/
-     
-
     while(1){
         // Time for iteration of filter
         clock_t begin = clock();
@@ -154,10 +144,10 @@ int main() {
         // Todo: If buffer empty, skip...
         z=buff1[0];
 
-        predict_state(x, TS);
-        predict_P(p, q, TS);
-        update_state(x, p, z, r);
-        update_p(p, x, r);
+        predict_state(x);
+        predict_P(p, q);
+        update_state(x, p, z);
+        update_p(p, x);
 
         if(x[0]>2*M_PI){
             x[0] = x[0] - 2*M_PI;

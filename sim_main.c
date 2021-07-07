@@ -27,21 +27,21 @@
 // Thermal throttilng
 // DVFS
 
-void predict_state(float *state, const float ts) {
-    state[0] = state[0] + state[1] * ts;
+void predict_state(float *state) {
+    state[0] = state[0] + state[1] * TS;
 }
 
-void predict_P(float *P, const float *Q, const float ts) {
-    P[0] = P[0] + 2 * ts * P[3] + ts * ts * P[1] + Q[0];
+void predict_P(float *P, const float *Q) {
+    P[0] = P[0] + 2 * TS * P[3] + TS * TS * P[1] + Q[0];
     P[1] = P[1] + Q[1];
     P[2] = P[2] + Q[2];
-    P[3] = P[3] + ts * P[1] + Q[3];
+    P[3] = P[3] + TS * P[1] + Q[3];
 }
 
 float alpha(float const *state, float const *P) {
     float cos_thet = cosf(state[0]);
     float sin_thet = sinf(state[0]);
-    return P[0] * state[0] * state[0] * cos_thet*cos_thet + P[2] * sin_thet*sin_thet;
+    return P[0] * state[2] * state[2] * cos_thet*cos_thet + P[2] * sin_thet*sin_thet;
 }
 
 float calc_S(const float *state, const float *P) {
@@ -53,7 +53,7 @@ void gain(float *K, const float *state, const float *P) {
     float s = calc_S(state, P);
     float cos_thet = cosf(state[0]);
     K[0] = P[0] * state[2] * cos_thet;
-    K[0] = s;
+    K[0] /= s;
     K[1] = P[3] * state[2] * cos_thet;
     K[1] /= s;
     K[2] = P[2] * sinf(state[0]);
@@ -80,8 +80,7 @@ void update_p(float *P, float *state) {
 
 int main() {
     _Bool half_phase;
-    _Bool half_phase_prev;
-    //float phase_prev;
+    _Bool half_phase_prev = 0;
     float x[3] = {0, OMEGA, AMPLITUDE};
     float q[4] = {0.01, 0.001, 0.001, 0};
     float p[4] = {100, 100, 100, 100};
@@ -129,8 +128,8 @@ int main() {
     }
 
     while(fscanf(hene, "%f", &z)== 1){
-        predict_state(x, TS);
-        predict_P(p, q, TS);
+        predict_state(x);
+        predict_P(p, q);
         update_state(x, p, z);
         update_p(p, x);
 
