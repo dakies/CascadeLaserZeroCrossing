@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 cpu_times = np.loadtxt('time_log.txt')
-
+cpu_times = cpu_times[:100]
 fig, axs = plt.subplots(2, 1)
 axs[0].plot(cpu_times)
 axs[0].set_title('CPU time for single Kalman filter itertion')

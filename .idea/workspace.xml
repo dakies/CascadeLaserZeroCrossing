@@ -12,9 +12,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37cd095b-536a-42d5-9cd8-ea1e3657f901" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/KalmanCPU/RP_resample.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KalmanCPU/filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/KalmanCPU/filter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KalmanCPU/redPitaya_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KalmanCPU/test_stream.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KalmanFilter_Sim_normalSin.py.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/KalmanFilter_Sim_Barb.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RedPitaya/Examples/C/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/RedPitaya/Examples/C/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RedPitaya/Examples/C/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/RedPitaya/Examples/C/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/KalmanFilter_Sim_normalSin.py.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/KalmanFilter_Sim_normalSin.py.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kalman_c_hp.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kalman_c_orig.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kalman_filt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_time_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_time_log.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/time_log.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +35,20 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -34,7 +58,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/RedPitaya" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JupyterTrust" id="d7c568b4-4172-4d8c-ba8d-6ac2cf04357e" />
   <component name="ProjectId" id="1utAr4l0S9GI7QGYIfaBa2rsi6P" />
@@ -59,20 +83,18 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/KalmanCPU" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.sim_main">
+  <component name="RunManager" selected="Python.RP_resample">
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sim_main" type="CMakeRunConfiguration" factoryName="Application" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="sim_main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="sim_main">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -81,6 +103,28 @@
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="RP_resample" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CascadeLaserZeroCrossing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/KalmanCPU" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/KalmanCPU/RP_resample.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="convert_numpy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CascadeLaserZeroCrossing" />
@@ -171,23 +215,23 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="CMake Application.sim_main" />
       <item itemvalue="Python.convert_numpy" />
       <item itemvalue="Python.plot_c" />
       <item itemvalue="Python.plot_time_log" />
       <item itemvalue="Python.simu_c" />
+      <item itemvalue="Python.RP_resample" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="CMake Application.sim_main" />
+        <item itemvalue="Python.RP_resample" />
+        <item itemvalue="Python.plot_time_log" />
         <item itemvalue="Python.convert_numpy" />
         <item itemvalue="Python.plot_c" />
         <item itemvalue="Python.simu_c" />
-        <item itemvalue="Python.plot_time_log" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -204,6 +248,9 @@
       <workItem from="1625650962541" duration="17000" />
       <workItem from="1625651664700" duration="7106000" />
       <workItem from="1625665064460" duration="1000" />
+      <workItem from="1625675021624" duration="5121000" />
+      <workItem from="1626334331064" duration="109000" />
+      <workItem from="1626334457510" duration="5267000" />
     </task>
     <servers />
   </component>
@@ -215,11 +262,67 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1238" height="129" key="GridCell.Tab.0.bottom" timestamp="1626342826688">
+      <screen x="0" y="25" width="1280" height="726" />
+    </state>
+    <state width="1238" height="159" key="GridCell.Tab.0.bottom/0.25.1280.721@0.25.1280.721" timestamp="1626167008082" />
+    <state width="1238" height="129" key="GridCell.Tab.0.bottom/0.25.1280.726@0.25.1280.726" timestamp="1626342826688" />
+    <state width="1238" height="129" key="GridCell.Tab.0.center" timestamp="1626342826687">
+      <screen x="0" y="25" width="1280" height="726" />
+    </state>
+    <state width="1238" height="159" key="GridCell.Tab.0.center/0.25.1280.721@0.25.1280.721" timestamp="1626167008081" />
+    <state width="1238" height="129" key="GridCell.Tab.0.center/0.25.1280.726@0.25.1280.726" timestamp="1626342826687" />
+    <state width="1238" height="129" key="GridCell.Tab.0.left" timestamp="1626342826686">
+      <screen x="0" y="25" width="1280" height="726" />
+    </state>
+    <state width="1238" height="159" key="GridCell.Tab.0.left/0.25.1280.721@0.25.1280.721" timestamp="1626167008081" />
+    <state width="1238" height="129" key="GridCell.Tab.0.left/0.25.1280.726@0.25.1280.726" timestamp="1626342826686" />
+    <state width="1238" height="129" key="GridCell.Tab.0.right" timestamp="1626342826687">
+      <screen x="0" y="25" width="1280" height="726" />
+    </state>
+    <state width="1238" height="159" key="GridCell.Tab.0.right/0.25.1280.721@0.25.1280.721" timestamp="1626167008082" />
+    <state width="1238" height="129" key="GridCell.Tab.0.right/0.25.1280.726@0.25.1280.726" timestamp="1626342826687" />
+    <state width="1238" height="166" key="GridCell.Tab.1.bottom" timestamp="1626338002814">
+      <screen x="0" y="25" width="1280" height="726" />
+    </state>
+    <state width="1238" height="203" key="GridCell.Tab.1.bottom/0.25.1280.721@0.25.1280.721" timestamp="1626167003731" />
+    <state width="1238" height="166" key="GridCell.Tab.1.bottom/0.25.1280.726@0.25.1280.726" timestamp="1626338002814" />
+    <state width="1238" height="166" key="GridCell.Tab.1.center" timestamp="1626338002813">
+      <screen x="0" y="25" width="1280" height="726" />
+    </state>
+    <state width="1238" height="203" key="GridCell.Tab.1.center/0.25.1280.721@0.25.1280.721" timestamp="1626167003730" />
+    <state width="1238" height="166" key="GridCell.Tab.1.center/0.25.1280.726@0.25.1280.726" timestamp="1626338002813" />
+    <state width="1238" height="166" key="GridCell.Tab.1.left" timestamp="1626338002812">
+      <screen x="0" y="25" width="1280" height="726" />
+    </state>
+    <state width="1238" height="203" key="GridCell.Tab.1.left/0.25.1280.721@0.25.1280.721" timestamp="1626167003730" />
+    <state width="1238" height="166" key="GridCell.Tab.1.left/0.25.1280.726@0.25.1280.726" timestamp="1626338002812" />
+    <state width="1238" height="166" key="GridCell.Tab.1.right" timestamp="1626338002813">
+      <screen x="0" y="25" width="1280" height="726" />
+    </state>
+    <state width="1238" height="203" key="GridCell.Tab.1.right/0.25.1280.721@0.25.1280.721" timestamp="1626167003730" />
+    <state width="1238" height="166" key="GridCell.Tab.1.right/0.25.1280.726@0.25.1280.726" timestamp="1626338002813" />
+    <state x="149" y="25" width="982" height="725" key="SettingsEditor" timestamp="1626334438988">
+      <screen x="0" y="25" width="1280" height="725" />
+    </state>
+    <state x="149" y="25" width="982" height="725" key="SettingsEditor/0.25.1280.725@0.25.1280.725" timestamp="1626334438988" />
+    <state x="295" y="212" key="com.intellij.ide.util.TipDialog" timestamp="1626334530983">
+      <screen x="0" y="25" width="1280" height="725" />
+    </state>
+    <state x="295" y="212" key="com.intellij.ide.util.TipDialog/0.25.1280.725@0.25.1280.725" timestamp="1626334530983" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CascadeLaserZeroCrossing$receive_stream.coverage" NAME="receive_stream Coverage Results" MODIFIED="1625840446914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KalmanCPU" />
+    <SUITE FILE_PATH="coverage/CascadeLaserZeroCrossing$plot_time_log.coverage" NAME="plot_time_log Coverage Results" MODIFIED="1625676344186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CascadeLaserZeroCrossing$redPitaya_test.coverage" NAME="RP_resample Coverage Results" MODIFIED="1626342826668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KalmanCPU" />
   </component>
 </project>

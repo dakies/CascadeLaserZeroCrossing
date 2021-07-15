@@ -12,10 +12,8 @@
 #define AMPLITUDE 0.012 // Amplitude of HeNe laser signal(V)
 #define R 0.000001 //Variance of measurement
 #define TS 0.000004 // Sampling period
-
-
-//#define signal_freq (2*v_stage/lambda_hene) //Frequency of intensity signal
 #define OMEGA 99291.8//(2*M_PI*signal_freq) //Angular freq of intesity signal
+//#define DEBUG
 
 // delete fprint
 // block vs sample by sample
@@ -111,7 +109,7 @@ int main() {
         return 0;
     }
 
-    uint32_t buff_size = 128;
+    uint32_t buff_size = 1;
     float *buff1 = (float *) malloc(buff_size * sizeof(float));
     float *buff2 = (float *) malloc(buff_size * sizeof(float));
 
@@ -120,8 +118,8 @@ int main() {
     rp_AcqSetSamplingRate(RP_SMP_244_140K);*/
 
     rp_AcqReset();
-    //rp_AcqSetSamplingRate(RP_SMP_244_140K);
-    rp_AcqSetDecimation(RP_DEC_8);
+    rp_AcqSetSamplingRate(RP_SMP_1_953M);
+    rp_AcqSetDecimation(RP_DEC_64);
     rp_AcqSetTriggerDelay(0);
     rp_AcqStart();
 
@@ -160,8 +158,9 @@ int main() {
 
         // Todo: If buffer empty, skip...
         z=buff1[0];
+        fprintf(fp, "%lf\n", z);
 
-        predict_state(x);
+        /*predict_state(x);
         predict_P(p, q);
         update_state(x, p, z);
         update_p(p, x);
@@ -179,23 +178,21 @@ int main() {
             rp_DpinSetState(RP_DIO0_P, RP_HIGH);
             //printf("Down \n");
         }
-
+        */
         // Save channel 2 on change of phase
         if(half_phase^half_phase_prev){
             /*//Save channel 2 on zero crossing of channel 1
             fprintf(dat, "%lf\n", buff2[0]);*/
             //printf("hello\n");
- 	    rp_GenTrigger(1);
-	    //rp_GenAmp(half_phase);
-	    //rp_GenTrigger(0);
         }
 
 
         #ifdef DEBUG
         //Save time
         float time_spent = (float) (end - begin); // / CLOCKS_PER_SEC;
-        fprintf(fp, "%lf\n", time_spent);
+        //fprintf(fp, "%lf\n", time_spent);
         #endif
+
         //fprintf(stderr, "%lf\n", time_spent);
     }
     /* Releasing resources */
