@@ -5,8 +5,9 @@ from KalmanCPU.filter import KalmanFilter
 import time
 from threading import Thread
 
+
 class zero_cross_detector(Thread):
-    def __init__(self, kf:KalmanFilter):
+    def __init__(self, kf: KalmanFilter):
         Thread.__init__(self)
         self.state = []
         self.filt = []
@@ -23,6 +24,8 @@ class zero_cross_detector(Thread):
 
     def run(self):
         while self.running is True:
+            # Remove after problem with scaling is solved
+            init = False
             if self.client.reply_q.qsize():
                 a = self.client.reply_q.get()
                 if a.type == 0:  # ERROR
@@ -35,6 +38,14 @@ class zero_cross_detector(Thread):
                     params = a.data['params']
                     data1 = a.data['bytes_data1']
                     data2 = a.data['bytes_data2']
+
+                    # Remove after problem with scaling is solved
+                    if not init:
+                        offset = np.mean(data1)
+                        ampl = (np.max(data1) - np.min(data1))/2
+                        scale = 0.012 / ampl
+                        init = True
+                    data1 = (data1 - offset) * scale
 
                     for i, z in np.ndenumerate(data1):
                         # Filter
@@ -50,7 +61,7 @@ class zero_cross_detector(Thread):
                             self.crossing.append(1)
                         else:
                             self.crossing.append(0)
-                        self.filt.append(x[2]*np.sin(x[0]))
+                        self.filt.append(x[2] * np.sin(x[0]))
                         self.state.append(x)
                     # New prev half phase
                     self.half_phase_prev = half_phase
@@ -74,7 +85,7 @@ dataframe = 0  # counter for number of data packets
 dataframeN = 100
 LOST = 0
 
-QUEUE_DEPTH = 1000
+QUEUE_DEPTH = -1
 SERVER_ADDR = '169.254.248.16', 8900
 
 client = SocketClientThread(QUEUE_DEPTH)
@@ -84,7 +95,6 @@ client.cmd_q.put(ClientCommand(ClientCommand.CONNECT, SERVER_ADDR))
 # %% Initialize the Thread
 kf = KalmanFilter()
 launch_acq = zero_cross_detector(kf)
-
 
 launch_acq.start()
 # time.sleep(10)
@@ -100,7 +110,7 @@ print(len(resampled))
 plt.figure()
 plt.plot(np.flipud(hene[100:200]), lw=.4, label='HeNe')
 # plt.plot(np.flipud(mct), lw=.4, alpha=0.5)
-plt.plot(10*np.array(crossing[100:200]), label='Zero Cross')
+plt.plot(np.max(hene)*0.8 * np.array(crossing[100:200]), label='Zero Cross')
 plt.plot(filt[100:200], label='Filt. HeNe')
 plt.legend()
 
@@ -116,7 +126,7 @@ plt.show()
 
 # Save
 np.save('data/hene', hene)
+np.save('data/mct', mct)
 np.save('data/filt', filt)
 np.save('data/cross', crossing)
-np.save('data/sampled', resampled)
-
+np.save('data/resampled', resampled)

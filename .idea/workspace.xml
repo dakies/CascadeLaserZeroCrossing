@@ -12,20 +12,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37cd095b-536a-42d5-9cd8-ea1e3657f901" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/KalmanCPU/RP_resample.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KalmanCPU/filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/KalmanCPU/filter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KalmanCPU/redPitaya_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KalmanCPU/test_stream.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KalmanFilter_Sim_normalSin.py.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/KalmanFilter_Sim_Barb.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KalmanCPU/RP_resample.py" beforeDir="false" afterPath="$PROJECT_DIR$/KalmanCPU/RP_resample.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RedPitaya/Examples/C/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/RedPitaya/Examples/C/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RedPitaya/Examples/C/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/RedPitaya/Examples/C/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Simulation/KalmanFilter_Sim_normalSin.py.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/KalmanFilter_Sim_normalSin.py.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kalman_c_hp.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kalman_c_orig.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kalman_filt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_c.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/plot_c.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plot_time_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_time_log.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/time_log.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +69,7 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/RedPitaya/Examples/C" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -86,24 +79,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/RedPitaya/Examples/C" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/KalmanCPU" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.RP_resample">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Python.convert_numpy">
     <configuration name="RP_resample" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CascadeLaserZeroCrossing" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -192,7 +176,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="simu_c" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="receive_stream" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CascadeLaserZeroCrossing" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -200,12 +184,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/KalmanCPU" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/simu_c.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/KalmanCPU/receive_stream.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -215,19 +199,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.RP_resample" />
       <item itemvalue="Python.convert_numpy" />
       <item itemvalue="Python.plot_c" />
       <item itemvalue="Python.plot_time_log" />
-      <item itemvalue="Python.simu_c" />
-      <item itemvalue="Python.RP_resample" />
+      <item itemvalue="Python.receive_stream" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.RP_resample" />
-        <item itemvalue="Python.plot_time_log" />
         <item itemvalue="Python.convert_numpy" />
+        <item itemvalue="Python.plot_time_log" />
+        <item itemvalue="Python.RP_resample" />
+        <item itemvalue="Python.receive_stream" />
         <item itemvalue="Python.plot_c" />
-        <item itemvalue="Python.simu_c" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +234,16 @@
       <workItem from="1625665064460" duration="1000" />
       <workItem from="1625675021624" duration="5121000" />
       <workItem from="1626334331064" duration="109000" />
-      <workItem from="1626334457510" duration="5267000" />
+      <workItem from="1626334457510" duration="9268000" />
+      <workItem from="1626682782378" duration="1431000" />
+      <workItem from="1626693593675" duration="5858000" />
+      <workItem from="1626705353228" duration="1000" />
+      <workItem from="1626705581065" duration="1603000" />
+      <workItem from="1626787755875" duration="4948000" />
+      <workItem from="1626798060130" duration="1061000" />
+      <workItem from="1628623812171" duration="4356000" />
+      <workItem from="1628665309765" duration="10000" />
+      <workItem from="1629461794229" duration="55000" />
     </task>
     <servers />
   </component>
@@ -271,58 +264,84 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="129" key="GridCell.Tab.0.bottom" timestamp="1626342826688">
-      <screen x="0" y="25" width="1280" height="726" />
+    <state width="1236" height="136" key="GridCell.Tab.0.bottom" timestamp="1628667807477">
+      <screen x="0" y="25" width="1280" height="725" />
     </state>
     <state width="1238" height="159" key="GridCell.Tab.0.bottom/0.25.1280.721@0.25.1280.721" timestamp="1626167008082" />
+    <state width="1236" height="136" key="GridCell.Tab.0.bottom/0.25.1280.724@0.25.1280.724" timestamp="1626799125927" />
+    <state width="1236" height="136" key="GridCell.Tab.0.bottom/0.25.1280.725@0.25.1280.725" timestamp="1628667807477" />
     <state width="1238" height="129" key="GridCell.Tab.0.bottom/0.25.1280.726@0.25.1280.726" timestamp="1626342826688" />
-    <state width="1238" height="129" key="GridCell.Tab.0.center" timestamp="1626342826687">
-      <screen x="0" y="25" width="1280" height="726" />
+    <state width="1238" height="238" key="GridCell.Tab.0.bottom/0.25.1280.727@0.25.1280.727" timestamp="1626363894591" />
+    <state width="1236" height="136" key="GridCell.Tab.0.bottom/0.25.1280.729@0.25.1280.729" timestamp="1626706017545" />
+    <state width="1819" height="136" key="GridCell.Tab.0.bottom/0.25.2560.1353@0.25.2560.1353" timestamp="1628626224039" />
+    <state width="1236" height="136" key="GridCell.Tab.0.center" timestamp="1628667807476">
+      <screen x="0" y="25" width="1280" height="725" />
     </state>
     <state width="1238" height="159" key="GridCell.Tab.0.center/0.25.1280.721@0.25.1280.721" timestamp="1626167008081" />
+    <state width="1236" height="136" key="GridCell.Tab.0.center/0.25.1280.724@0.25.1280.724" timestamp="1626799125926" />
+    <state width="1236" height="136" key="GridCell.Tab.0.center/0.25.1280.725@0.25.1280.725" timestamp="1628667807476" />
     <state width="1238" height="129" key="GridCell.Tab.0.center/0.25.1280.726@0.25.1280.726" timestamp="1626342826687" />
-    <state width="1238" height="129" key="GridCell.Tab.0.left" timestamp="1626342826686">
-      <screen x="0" y="25" width="1280" height="726" />
+    <state width="1238" height="238" key="GridCell.Tab.0.center/0.25.1280.727@0.25.1280.727" timestamp="1626363894591" />
+    <state width="1236" height="136" key="GridCell.Tab.0.center/0.25.1280.729@0.25.1280.729" timestamp="1626706017544" />
+    <state width="1819" height="136" key="GridCell.Tab.0.center/0.25.2560.1353@0.25.2560.1353" timestamp="1628626224038" />
+    <state width="1236" height="136" key="GridCell.Tab.0.left" timestamp="1628667807475">
+      <screen x="0" y="25" width="1280" height="725" />
     </state>
     <state width="1238" height="159" key="GridCell.Tab.0.left/0.25.1280.721@0.25.1280.721" timestamp="1626167008081" />
+    <state width="1236" height="136" key="GridCell.Tab.0.left/0.25.1280.724@0.25.1280.724" timestamp="1626799125926" />
+    <state width="1236" height="136" key="GridCell.Tab.0.left/0.25.1280.725@0.25.1280.725" timestamp="1628667807475" />
     <state width="1238" height="129" key="GridCell.Tab.0.left/0.25.1280.726@0.25.1280.726" timestamp="1626342826686" />
-    <state width="1238" height="129" key="GridCell.Tab.0.right" timestamp="1626342826687">
-      <screen x="0" y="25" width="1280" height="726" />
+    <state width="1238" height="238" key="GridCell.Tab.0.left/0.25.1280.727@0.25.1280.727" timestamp="1626363894590" />
+    <state width="1236" height="136" key="GridCell.Tab.0.left/0.25.1280.729@0.25.1280.729" timestamp="1626706017543" />
+    <state width="1819" height="136" key="GridCell.Tab.0.left/0.25.2560.1353@0.25.2560.1353" timestamp="1628626224038" />
+    <state width="1236" height="136" key="GridCell.Tab.0.right" timestamp="1628667807477">
+      <screen x="0" y="25" width="1280" height="725" />
     </state>
     <state width="1238" height="159" key="GridCell.Tab.0.right/0.25.1280.721@0.25.1280.721" timestamp="1626167008082" />
+    <state width="1236" height="136" key="GridCell.Tab.0.right/0.25.1280.724@0.25.1280.724" timestamp="1626799125926" />
+    <state width="1236" height="136" key="GridCell.Tab.0.right/0.25.1280.725@0.25.1280.725" timestamp="1628667807477" />
     <state width="1238" height="129" key="GridCell.Tab.0.right/0.25.1280.726@0.25.1280.726" timestamp="1626342826687" />
-    <state width="1238" height="166" key="GridCell.Tab.1.bottom" timestamp="1626338002814">
-      <screen x="0" y="25" width="1280" height="726" />
+    <state width="1238" height="238" key="GridCell.Tab.0.right/0.25.1280.727@0.25.1280.727" timestamp="1626363894591" />
+    <state width="1236" height="136" key="GridCell.Tab.0.right/0.25.1280.729@0.25.1280.729" timestamp="1626706017544" />
+    <state width="1819" height="136" key="GridCell.Tab.0.right/0.25.2560.1353@0.25.2560.1353" timestamp="1628626224039" />
+    <state width="1238" height="244" key="GridCell.Tab.1.bottom" timestamp="1626363069987">
+      <screen x="0" y="25" width="1280" height="727" />
     </state>
     <state width="1238" height="203" key="GridCell.Tab.1.bottom/0.25.1280.721@0.25.1280.721" timestamp="1626167003731" />
     <state width="1238" height="166" key="GridCell.Tab.1.bottom/0.25.1280.726@0.25.1280.726" timestamp="1626338002814" />
-    <state width="1238" height="166" key="GridCell.Tab.1.center" timestamp="1626338002813">
-      <screen x="0" y="25" width="1280" height="726" />
+    <state width="1238" height="244" key="GridCell.Tab.1.bottom/0.25.1280.727@0.25.1280.727" timestamp="1626363069987" />
+    <state width="1238" height="244" key="GridCell.Tab.1.center" timestamp="1626363069986">
+      <screen x="0" y="25" width="1280" height="727" />
     </state>
     <state width="1238" height="203" key="GridCell.Tab.1.center/0.25.1280.721@0.25.1280.721" timestamp="1626167003730" />
     <state width="1238" height="166" key="GridCell.Tab.1.center/0.25.1280.726@0.25.1280.726" timestamp="1626338002813" />
-    <state width="1238" height="166" key="GridCell.Tab.1.left" timestamp="1626338002812">
-      <screen x="0" y="25" width="1280" height="726" />
+    <state width="1238" height="244" key="GridCell.Tab.1.center/0.25.1280.727@0.25.1280.727" timestamp="1626363069986" />
+    <state width="1238" height="244" key="GridCell.Tab.1.left" timestamp="1626363069986">
+      <screen x="0" y="25" width="1280" height="727" />
     </state>
     <state width="1238" height="203" key="GridCell.Tab.1.left/0.25.1280.721@0.25.1280.721" timestamp="1626167003730" />
     <state width="1238" height="166" key="GridCell.Tab.1.left/0.25.1280.726@0.25.1280.726" timestamp="1626338002812" />
-    <state width="1238" height="166" key="GridCell.Tab.1.right" timestamp="1626338002813">
-      <screen x="0" y="25" width="1280" height="726" />
+    <state width="1238" height="244" key="GridCell.Tab.1.left/0.25.1280.727@0.25.1280.727" timestamp="1626363069986" />
+    <state width="1238" height="244" key="GridCell.Tab.1.right" timestamp="1626363069987">
+      <screen x="0" y="25" width="1280" height="727" />
     </state>
     <state width="1238" height="203" key="GridCell.Tab.1.right/0.25.1280.721@0.25.1280.721" timestamp="1626167003730" />
     <state width="1238" height="166" key="GridCell.Tab.1.right/0.25.1280.726@0.25.1280.726" timestamp="1626338002813" />
+    <state width="1238" height="244" key="GridCell.Tab.1.right/0.25.1280.727@0.25.1280.727" timestamp="1626363069987" />
     <state x="149" y="25" width="982" height="725" key="SettingsEditor" timestamp="1626334438988">
       <screen x="0" y="25" width="1280" height="725" />
     </state>
     <state x="149" y="25" width="982" height="725" key="SettingsEditor/0.25.1280.725@0.25.1280.725" timestamp="1626334438988" />
-    <state x="295" y="212" key="com.intellij.ide.util.TipDialog" timestamp="1626334530983">
-      <screen x="0" y="25" width="1280" height="725" />
+    <state x="295" y="211" key="com.intellij.ide.util.TipDialog" timestamp="1629461894965">
+      <screen x="0" y="25" width="1280" height="722" />
     </state>
+    <state x="295" y="211" key="com.intellij.ide.util.TipDialog/0.25.1280.722@0.25.1280.722" timestamp="1629461894965" />
+    <state x="295" y="212" key="com.intellij.ide.util.TipDialog/0.25.1280.724@0.25.1280.724" timestamp="1626705636671" />
     <state x="295" y="212" key="com.intellij.ide.util.TipDialog/0.25.1280.725@0.25.1280.725" timestamp="1626334530983" />
+    <state x="590" y="374" key="com.intellij.ide.util.TipDialog/0.25.2560.1353@0.25.2560.1353" timestamp="1628623811870" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CascadeLaserZeroCrossing$receive_stream.coverage" NAME="receive_stream Coverage Results" MODIFIED="1625840446914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KalmanCPU" />
-    <SUITE FILE_PATH="coverage/CascadeLaserZeroCrossing$plot_time_log.coverage" NAME="plot_time_log Coverage Results" MODIFIED="1625676344186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CascadeLaserZeroCrossing$redPitaya_test.coverage" NAME="RP_resample Coverage Results" MODIFIED="1626342826668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KalmanCPU" />
+    <SUITE FILE_PATH="coverage/CascadeLaserZeroCrossing$plot_time_log.coverage" NAME="plot_time_log Coverage Results" MODIFIED="1628666313897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CascadeLaserZeroCrossing$convert_numpy.coverage" NAME="convert_numpy Coverage Results" MODIFIED="1628667807457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
